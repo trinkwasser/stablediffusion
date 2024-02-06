@@ -188,7 +188,9 @@ def main():
     model = load_model_from_config(config, f"{opt.ckpt}")
 
     device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+    print(f"Running on {device}")
     model = model.to(device)
+    print(model)
 
     sampler = DDIMSampler(model)
 

@@ -163,3 +163,4 @@ cython_debug/
 # IDEs
 .idea/
 .vscode/
+v1-5-pruned.ckpt
